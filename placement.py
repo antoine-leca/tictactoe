@@ -1,40 +1,27 @@
 table= [
-        ["","","x"],
-        ["","","o"],
-        ["x","","x"]
+        ["","",""],
+        ["","",""],
+        ["","",""]
         ]
 
-def verifCase(table, row, column, symbol):
+def verif_case(table, symbol):
+        print(symbol,'toto')
+        row     = int(input("rentrez la ligne : "))
+        column  = int(input("rentrez la colonne : "))
         element = table[row][column]
-        print(element)
+
         if element == "":
-                element = symbol
-                print(element)
-                return print(element, "au joueur suivant de jouer")
+                table[row][column] = symbol
+                # table.insert(element, symbol)
+                return print(table ,"au joueur suivant de jouer")
         else:
-                while element != ""
-                        return print("veuillez choisir une autre case")
-                        row     = int(input("rentrez la ligne : "))
-                        column  = int(input("rentrez la colonne : "))
+                print("veuillez choisir une autre case")
+                return verif_case(table, symbol)
+                        
 
-       
-
-row     = int(input("rentrez la ligne : "))
-column  = int(input("rentrez la colonne : "))
-symbol  = input("veuillez rentrez le signe :  ")
-
-verifCase(table, row, column, symbol)
+for x in table:
+        for ele in x:
+                symbol  = input("veuillez rentrez le signe :  ")
+                verif_case(table, symbol)
 
 
-
-
-
-
-
-"""
- if tabParam == "":
-                
-
-verifCase(row, column, tab, player1)
-
-"""
