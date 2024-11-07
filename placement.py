@@ -44,3 +44,4 @@ for x in table:
                 verif_case(table, symbol)
 
 
+#vérifier le merge
