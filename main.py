@@ -1,10 +1,10 @@
-from joueurs.py import initialiser_joueurs
-from grid.py import create_grid
-from placement.py import verif_case
-from winner.py import horizontal
-from winner.py import verticale
-from winner.py import diagonale
-from winner.py import match_nul
+from joueurs import initialiser_joueurs
+from grid import create_grid
+from placement import verif_case
+from winner import horizontal
+from winner import verticale
+from winner import diagonale
+from winner import match_nul
 
 def main():
     initialiser_joueurs()

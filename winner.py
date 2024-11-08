@@ -1,10 +1,11 @@
 #plateau de jeu
+"""
 player = [
     ['X', 'O', 'X'],
     ['X', 'X', 'X'],
     ['O', 'X', 'O']
 ]
-
+"""
 #verification des cases horizontales
 def horizontal(board):
     if player[0][0] == "X" and player[0][1] == "X" and player[0][2] == "X" or \
