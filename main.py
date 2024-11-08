@@ -1,18 +1,25 @@
 from joueurs import initialiser_joueurs
+from joueurs import choisir_symboles
 from grid import create_grid
 from placement import verif_case
+from placement import toto
 from winner import horizontal
 from winner import verticale
 from winner import diagonale
 from winner import match_nul
 
-symbol = input("veuillez rentrez le signe")
+symbol = input("Veuillez rentrer le signe : ")
+L = [
+    [" ", " ", " "],
+    [" ", " ", " "],
+    [" ", " ", " "]
+    ]
 
 def main():
     initialiser_joueurs(symbol)
-    create_grid()
-    verif_case()
-    horizontal()
-    verticale()
-    diagonale()
-    match_nul()
+    verif_case(L, symbol)
+    horizontal(table)
+    verticale(table)
+    diagonale(table)
+    match_nul(table)
+    create_grid(L)
