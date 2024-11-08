@@ -6,6 +6,8 @@ from winner import verticale
 from winner import diagonale
 from winner import match_nul
 
+symbol = input("veuillez rentrez le signe")
+
 def main():
     initialiser_joueurs()
     create_grid()

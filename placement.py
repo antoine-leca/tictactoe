@@ -4,7 +4,6 @@ table= [
         ["","",""]
         ]
 
-
 """
 
 Cet fonction permet de rentrer dans la table le signe selectionner 
@@ -13,7 +12,7 @@ par le joueur et de verifier si son emplacement est vide.
 elle reçoit en parametr
 
 
-je fais rentrer au joueur les coordonnées de l'emplacement et je le stock 
+je fais rentrer au joueur les coordonnées de l emplacement et je le stock 
 dans une variables element
 
 
@@ -28,19 +27,19 @@ def verif_case(table, symbol):
                         table[row][column] = symbol
                         # table.insert(element, symbol)
                         print(table)
-                        print("au joueur suivant de jouer")
+                        print("Au joueur suivant de jouer.")
                         return table
                 else:
-                        print("veuillez choisir une autre case")
+                        print("Veuillez choisir une autre case : ")
                         return verif_case(table, symbol)
         else:
-                print("veuillez choisir entre l")
+                print("Veuillez choisir entre l")
 
                         
 
 for x in table:
         for ele in x:
-                symbol = input("veuillez rentrez le signe")
+                symbol = input("Veuillez rentrez le signe : ")
                 verif_case(table, symbol)
 
 
