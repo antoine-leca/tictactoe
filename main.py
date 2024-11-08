@@ -9,7 +9,7 @@ from winner import match_nul
 symbol = input("veuillez rentrez le signe")
 
 def main():
-    initialiser_joueurs()
+    initialiser_joueurs(symbol)
     create_grid()
     verif_case()
     horizontal()
