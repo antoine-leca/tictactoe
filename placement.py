@@ -40,7 +40,7 @@ def verif_case(table, symbol):
 
 for x in table:
         for ele in x:
-                symbol  = input("veuillez rentrez le signe :  ")
+                symbol = player1
                 verif_case(table, symbol)
 
 
