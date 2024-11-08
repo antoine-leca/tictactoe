@@ -7,7 +7,7 @@ def initialiser_joueurs() :
     print(f"player1 est {player1}.")
     print(f"player2 est {player2}.")
     return player1, player2
-player1, player2 =  initialiser_joueurs()
+
 
 
 def initialiser_joueurs() :
@@ -21,4 +21,3 @@ def initialiser_joueurs() :
     print(f"player1 est {player1}.")
     print(f"player2 est {player2}.")
     return player1, player2
-player1, player2 = initialiser_joueurs()
